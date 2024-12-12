@@ -1,6 +1,6 @@
 [owner]
 name = "malloc-nbytes"
-github = "github.com/my-repo"
+github = "https://github.com/malloc-nbytes/earl-module-bootstrap"
 
 [deps]
 clap = "https://github.com/malloc-nbytes/earl-module-clap.git"
