@@ -1,0 +1,9 @@
+[owner]
+name = "malloc-nbytes"
+github = "github.com/my-repo"
+
+[deps]
+clap = "https://github.com/malloc-nbytes/earl-module-clap.git"
+
+[config]
+prefix = "bootstrap"
