@@ -114,8 +114,9 @@ fn get_all_files() {
     with progname = argv()[0] in
     System::ls(".").foreach(|f| {
         with parts = f.split(".").filter(|k| { k != ""; }),
-             not_bin = parts.back() != "out" && parts.back() != "bin" in
-        if f != progname && "./" + f != progname && not_bin && len(parts) > 1 {
+             not_bin = parts.back() != "out" && parts.back() != "bin",
+             not_vim = parts.back() != "swp" in
+        if f != progname && "./" + f != progname && not_bin && not_vim && len(parts) > 1 {
             files.append(f);
         }
     });
