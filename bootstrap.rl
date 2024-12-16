@@ -76,7 +76,7 @@ let FLAGS = 0;
 fn check_all_file_extensions_match(@const @ref files) {
     let ext, buf = (none, []);
     foreach f in files.split(" ") {
-        with parts = f.split(".") in
+        with parts = f.split(".").filter(|k| { k != ""; }) in
         if len(parts) > 1 {
             buf.append(f);
             if ext == none {
