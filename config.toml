@@ -2,8 +2,5 @@
 name = "malloc-nbytes"
 github = "https://github.com/malloc-nbytes/earl-module-bootstrap"
 
-[deps]
-clap = "https://github.com/malloc-nbytes/earl-module-clap.git"
-
 [config]
 prefix = "bootstrap"
